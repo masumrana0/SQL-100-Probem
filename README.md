@@ -52,14 +52,60 @@ CREATE TABLE Employees (
 
 ### **Sample Data for Employees (First 5 rows)**
 ```sql
-INSERT INTO Employees (employee_id, "name", email, age, salary, department_id, status, hire_date) VALUES
+ INSERT INTO Employees (employee_id, "name", email, age, salary, department_id, status, hire_date) VALUES
 (1, 'Alice Johnson', 'alice.johnson@example.com', 30, 55000.00, 1, 'Active', '2022-01-15'),
 (2, 'Bob Smith', 'bob.smith@example.com', 40, 60000.00, 2, 'Inactive', '2021-06-20'),
 (3, 'Charlie Brown', 'charlie.brown@example.com', 28, 48000.00, 1, 'Probation', '2023-02-10'),
 (4, 'David White', 'david.white@example.com', 35, 75000.00, 3, 'Active', '2020-09-05'),
-(5, 'Emma Davis', 'emma.davis@example.com', 45, 80000.00, 2, 'Active', '2019-11-12');
+(5, 'Emma Davis', 'emma.davis@example.com', 45, 80000.00, 2, 'Active', '2019-11-12'),
+(6, 'Frank Harris', 'frank.harris@example.com', 33, 65000.00, 3, 'Inactive', '2021-08-22'),
+(7, 'Grace Lee', 'grace.lee@example.com', 29, 50000.00, 1, 'Active', '2023-04-18'),
+(8, 'Henry Wilson', 'henry.wilson@example.com', 50, 90000.00, 4, 'Active', '2018-07-30'),
+(9, 'Isabella Clark', 'isabella.clark@example.com', 27, 47000.00, 2, 'Probation', '2023-06-15'),
+(10, 'Jack Martinez', 'jack.martinez@example.com', 31, 72000.00, 4, 'Inactive', '2020-10-10'),
+(11, 'Karen Scott', 'karen.scott@example.com', 37, 56000.00, 1, 'Active', '2021-12-05'),
+(12, 'Liam Brown', 'liam.brown@example.com', 29, 51000.00, 2, 'Active', '2022-08-21'),
+(13, 'Mia Wilson', 'mia.wilson@example.com', 26, 47000.00, 3, 'Probation', '2023-07-11'),
+(14, 'Noah Harris', 'noah.harris@example.com', 32, 58000.00, 1, 'Inactive', '2020-05-14'),
+(15, 'Olivia Davis', 'olivia.davis@example.com', 34, 69000.00, 4, 'Active', '2019-09-27'),
+(16, 'Peter Adams', 'peter.adams@example.com', 38, 74000.00, 2, 'Inactive', '2018-11-02'),
+(17, 'Quinn Lewis', 'quinn.lewis@example.com', 27, 46000.00, 3, 'Probation', '2023-03-19'),
+(18, 'Rachel King', 'rachel.king@example.com', 30, 53000.00, 1, 'Active', '2021-06-28'),
+(19, 'Samuel Wright', 'samuel.wright@example.com', 36, 80000.00, 4, 'Active', '2017-12-15'),
+(20, 'Taylor Hill', 'taylor.hill@example.com', 28, 49000.00, 2, 'Probation', '2023-01-07'),
+(21, 'Uma Baker', 'uma.baker@example.com', 39, 66000.00, 1, 'Active', '2020-02-29'),
+(22, 'Victor Green', 'victor.green@example.com', 35, 73000.00, 3, 'Inactive', '2021-10-22'),
+(23, 'Wendy Foster', 'wendy.foster@example.com', 33, 52000.00, 2, 'Active', '2022-04-16'),
+(24, 'Xander Price', 'xander.price@example.com', 29, 48000.00, 4, 'Probation', '2023-09-14'),
+(25, 'Yvonne Bell', 'yvonne.bell@example.com', 31, 60000.00, 3, 'Active', '2019-08-30'),
+(26, 'Zachary Reed', 'zachary.reed@example.com', 45, 85000.00, 1, 'Active', '2016-10-05'),
+(27, 'Anna Howard', 'anna.howard@example.com', 42, 78000.00, 2, 'Inactive', '2017-03-25'),
+(28, 'Brian Carter', 'brian.carter@example.com', 37, 69000.00, 3, 'Active', '2018-06-12'),
+(29, 'Catherine Brooks', 'catherine.brooks@example.com', 30, 54000.00, 4, 'Probation', '2023-05-01'),
+(30, 'Derek Ward', 'derek.ward@example.com', 34, 61000.00, 1, 'Active', '2021-02-18'),
+(31, 'Eleanor Perry', 'eleanor.perry@example.com', 28, 47000.00, 2, 'Inactive', '2020-07-08'),
+(32, 'Felix Hughes', 'felix.hughes@example.com', 41, 77000.00, 3, 'Active', '2019-04-23'),
+(33, 'Gina Coleman', 'gina.coleman@example.com', 36, 68000.00, 4, 'Active', '2018-12-11'),
+(34, 'Harry Jenkins', 'harry.jenkins@example.com', 29, 51000.00, 1, 'Probation', '2023-08-30'),
+(35, 'Ivy Edwards', 'ivy.edwards@example.com', 32, 59000.00, 2, 'Active', '2022-09-04'),
+(36, 'Jason Murphy', 'jason.murphy@example.com', 38, 72000.00, 3, 'Inactive', '2017-05-14'),
+(37, 'Kylie Fisher', 'kylie.fisher@example.com', 27, 46000.00, 4, 'Active', '2023-10-10'),
+(38, 'Leonard Ortiz', 'leonard.ortiz@example.com', 50, 89000.00, 1, 'Active', '2015-07-19'),
+(39, 'Megan Simmons', 'megan.simmons@example.com', 31, 62000.00, 2, 'Inactive', '2021-01-12'),
+(40, 'Nathan Bishop', 'nathan.bishop@example.com', 28, 49000.00, 3, 'Probation', '2023-06-25'),
+(41, 'Olga Rivera', 'olga.rivera@example.com', 42, 78000.00, 4, 'Active', '2016-09-21'),
+(42, 'Paul Sanders', 'paul.sanders@example.com', 37, 70000.00, 1, 'Inactive', '2019-02-16'),
+(43, 'Quincy Turner', 'quincy.turner@example.com', 35, 66000.00, 2, 'Active', '2018-08-27'),
+(44, 'Rebecca Cox', 'rebecca.cox@example.com', 29, 51000.00, 3, 'Probation', '2023-03-11'),
+(45, 'Steven Flores', 'steven.flores@example.com', 39, 74000.00, 4, 'Active', '2017-11-05'),
+(46, 'Tracy Bennett', 'tracy.bennett@example.com', 34, 60000.00, 1, 'Active', '2020-05-09'),
+(47, 'Ursula Jenkins', 'ursula.jenkins@example.com', 28, 49000.00, 2, 'Probation', '2023-12-01'),
+(48, 'Vincent Howard', 'vincent.howard@example.com', 45, 83000.00, 3, 'Active', '2016-04-14'),
+(49, 'Walter Rogers', 'walter.rogers@example.com', 50, 90000.00, 4, 'Inactive', '2015-06-30'),
+(50, 'Xenia Allen', 'xenia.allen@example.com', 33, 57000.00, 1, 'Active', '2021-07-21');
+
 ```
-(Full dataset includes **50 employees**)
+ 
 
 ---
 

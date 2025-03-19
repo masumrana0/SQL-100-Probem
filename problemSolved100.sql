@@ -195,3 +195,10 @@ Advanced Queries (81-100)
 98.Retrieve employees whose salary increased by exactly 10% last year.
 99.Retrieve employees who have the same first and last name.
 100.Retrieve the department with the highest percentage of active employees.
+
+
+
+
+
+
+ 
